@@ -9,7 +9,13 @@ describe("numericalValue", function(){
     numericalValue(39).should.equal("thirty nine");
   });
   it("takes a multiple of 10 and returns its word version without a zero on the end.", function(){
-    numericalValue(20).should.equal("twenty");
+    numericalValue(40).should.equal("forty");
+  });
+  it("takes a double digit number between 10 and 19 and outputs its word value", function(){
+    numericalValue(15).should.equal("fifteen");
+  });
+  it("takes the edge case of input 10 and outputs its word value", function(){
+    numericalValue(10).should.equal("ten");
   });
 
 });
