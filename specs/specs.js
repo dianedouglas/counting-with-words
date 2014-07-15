@@ -23,7 +23,13 @@ describe("firstNumberSection", function(){
   it("takes the number 100 and returns its word",function(){
     firstNumberSection(100).should.equal("one hundred");
   });
+  it("takes the number 234 and returns its word",function(){
+    firstNumberSection(234).should.equal("two hundred and thirty four");
+  });
 });
 
-// describe("biginNumbas",function(){
-// })
+describe("biginNumbas",function(){
+  it("takes a number larger that 1000 and adds its big number name and returns the value in words",function(){
+    biginNumbas(1234).should.equal("one thousand two hundred and thirty four");
+  });
+});
